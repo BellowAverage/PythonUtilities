@@ -4,7 +4,7 @@ setup(
     name='BellowAveragePythonUtilities',
     version='0.1.0',
     packages=['OpenAIAPI'],
-    install_requires=["openai"],
+    install_requires=["openai==0.28"],
     description='A simple API for Python APIs',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
