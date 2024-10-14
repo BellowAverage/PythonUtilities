@@ -1,6 +1,6 @@
 import openai
 
-def singleConv(prompt, api_key, model='gpt-4', max_tokens=50, temperature=0.7, top_p=1, frequency_penalty=0, presence_penalty=0):
+def singleConv(prompt, api_key, model='gpt-3.5-turbo', max_tokens=50, temperature=0.7, top_p=1, frequency_penalty=0, presence_penalty=0):
     openai.api_key = api_key
 
     response = openai.ChatCompletion.create(
