@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='BellowAveragePythonUtilities',
     version='0.1.0',
-    packages=['OpenAIAPI'],
+    packages=['conversation'],
     install_requires=["openai==0.28"],
     description='A simple API for Python APIs',
     long_description=open('README.md').read(),
