@@ -1,12 +1,12 @@
 import openai
 
-def singleConv(prompt, api_key, model='gpt-3.5-turbo', max_tokens=50, temperature=0.7, top_p=1, frequency_penalty=0, presence_penalty=0):
+def singleConv(prompt, api_key, role='You are an assistant.', model='gpt-3.5-turbo', max_tokens=50, temperature=0.7, top_p=1, frequency_penalty=0, presence_penalty=0):
     openai.api_key = api_key
 
     response = openai.ChatCompletion.create(
         model=model,
         messages=[
-            {"role": "system", "content": "You are an assistant."},
+            {"role": "system", "content": role},
             {"role": "user", "content": prompt}
         ],
         max_tokens=max_tokens,
